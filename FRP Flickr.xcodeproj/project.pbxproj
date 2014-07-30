@@ -18,22 +18,7 @@
 		F676764D1989B354004E123F /* FRPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764C1989B354004E123F /* FRPMasterViewController.m */; };
 		F67676501989B354004E123F /* FRPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764F1989B354004E123F /* FRPDetailViewController.m */; };
 		F67676521989B354004E123F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67676511989B354004E123F /* Images.xcassets */; };
-		F67676591989B355004E123F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676581989B355004E123F /* XCTest.framework */; };
-		F676765A1989B355004E123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676331989B354004E123F /* Foundation.framework */; };
-		F676765B1989B355004E123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676371989B354004E123F /* UIKit.framework */; };
-		F67676631989B355004E123F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F67676611989B355004E123F /* InfoPlist.strings */; };
-		F67676651989B355004E123F /* FRP_FlickrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F67676641989B355004E123F /* FRP_FlickrTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F676765C1989B355004E123F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F67676281989B354004E123F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F676762F1989B354004E123F;
-			remoteInfo = "FRP Flickr";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F67676301989B354004E123F /* FRP Flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FRP Flickr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,11 +38,7 @@
 		F676764E1989B354004E123F /* FRPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPDetailViewController.h; sourceTree = "<group>"; };
 		F676764F1989B354004E123F /* FRPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPDetailViewController.m; sourceTree = "<group>"; };
 		F67676511989B354004E123F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F67676571989B355004E123F /* FRP FlickrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FRP FlickrTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67676581989B355004E123F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F67676601989B355004E123F /* FRP FlickrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRP FlickrTests-Info.plist"; sourceTree = "<group>"; };
-		F67676621989B355004E123F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F67676641989B355004E123F /* FRP_FlickrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRP_FlickrTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F67676541989B355004E123F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F67676591989B355004E123F /* XCTest.framework in Frameworks */,
-				F676765B1989B355004E123F /* UIKit.framework in Frameworks */,
-				F676765A1989B355004E123F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				F67676391989B354004E123F /* FRP Flickr */,
-				F676765E1989B355004E123F /* FRP FlickrTests */,
 				F67676321989B354004E123F /* Frameworks */,
 				F67676311989B354004E123F /* Products */,
 			);
@@ -98,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				F67676301989B354004E123F /* FRP Flickr.app */,
-				F67676571989B355004E123F /* FRP FlickrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,24 +111,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F676765E1989B355004E123F /* FRP FlickrTests */ = {
-			isa = PBXGroup;
-			children = (
-				F67676641989B355004E123F /* FRP_FlickrTests.m */,
-				F676765F1989B355004E123F /* Supporting Files */,
-			);
-			path = "FRP FlickrTests";
-			sourceTree = "<group>";
-		};
-		F676765F1989B355004E123F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F67676601989B355004E123F /* FRP FlickrTests-Info.plist */,
-				F67676611989B355004E123F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,24 +131,6 @@
 			productReference = F67676301989B354004E123F /* FRP Flickr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F67676561989B355004E123F /* FRP FlickrTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F676766B1989B355004E123F /* Build configuration list for PBXNativeTarget "FRP FlickrTests" */;
-			buildPhases = (
-				F67676531989B355004E123F /* Sources */,
-				F67676541989B355004E123F /* Frameworks */,
-				F67676551989B355004E123F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F676765D1989B355004E123F /* PBXTargetDependency */,
-			);
-			name = "FRP FlickrTests";
-			productName = "FRP FlickrTests";
-			productReference = F67676571989B355004E123F /* FRP FlickrTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,11 +140,6 @@
 				CLASSPREFIX = FRP;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "15 by 10, LLC";
-				TargetAttributes = {
-					F67676561989B355004E123F = {
-						TestTargetID = F676762F1989B354004E123F;
-					};
-				};
 			};
 			buildConfigurationList = F676762B1989B354004E123F /* Build configuration list for PBXProject "FRP Flickr" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -227,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				F676762F1989B354004E123F /* FRP Flickr */,
-				F67676561989B355004E123F /* FRP FlickrTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,14 +168,6 @@
 				F67676521989B354004E123F /* Images.xcassets in Resources */,
 				F67676471989B354004E123F /* Main_iPhone.storyboard in Resources */,
 				F676763E1989B354004E123F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F67676551989B355004E123F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F67676631989B355004E123F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,23 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F67676531989B355004E123F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F67676651989B355004E123F /* FRP_FlickrTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F676765D1989B355004E123F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F676762F1989B354004E123F /* FRP Flickr */;
-			targetProxy = F676765C1989B355004E123F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F676763C1989B354004E123F /* InfoPlist.strings */ = {
@@ -307,14 +210,6 @@
 				F67676491989B354004E123F /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		F67676611989B355004E123F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F67676621989B355004E123F /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -418,46 +313,6 @@
 			};
 			name = Release;
 		};
-		F676766C1989B355004E123F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRP Flickr.app/FRP Flickr";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FRP Flickr/FRP Flickr-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FRP FlickrTests/FRP FlickrTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F676766D1989B355004E123F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRP Flickr.app/FRP Flickr";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FRP Flickr/FRP Flickr-Prefix.pch";
-				INFOPLIST_FILE = "FRP FlickrTests/FRP FlickrTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,14 +330,6 @@
 			buildConfigurations = (
 				F67676691989B355004E123F /* Debug */,
 				F676766A1989B355004E123F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		F676766B1989B355004E123F /* Build configuration list for PBXNativeTarget "FRP FlickrTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F676766C1989B355004E123F /* Debug */,
-				F676766D1989B355004E123F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
