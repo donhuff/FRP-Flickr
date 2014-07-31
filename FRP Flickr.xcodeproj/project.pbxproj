@@ -23,6 +23,7 @@
 		F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F679198A879300C96649 /* FRPPhotos.m */; };
 		F6A6F67D198A894F00C96649 /* FRPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F67C198A894F00C96649 /* FRPPhoto.m */; };
 		F6A6F680198A901E00C96649 /* FRPPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F67F198A901E00C96649 /* FRPPhotoCell.m */; };
+		F6A6F683198AAA7A00C96649 /* UIImage+FRP_Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F682198AAA7A00C96649 /* UIImage+FRP_Flickr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		F6A6F67C198A894F00C96649 /* FRPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhoto.m; sourceTree = "<group>"; };
 		F6A6F67E198A901E00C96649 /* FRPPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoCell.h; sourceTree = "<group>"; };
 		F6A6F67F198A901E00C96649 /* FRPPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoCell.m; sourceTree = "<group>"; };
+		F6A6F681198AAA7A00C96649 /* UIImage+FRP_Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FRP_Flickr.h"; sourceTree = "<group>"; };
+		F6A6F682198AAA7A00C96649 /* UIImage+FRP_Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FRP_Flickr.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				F67676451989B354004E123F /* Main_iPhone.storyboard */,
 				F676766E198A7980004E123F /* Models */,
 				F676763A1989B354004E123F /* Supporting Files */,
+				F6A6F681198AAA7A00C96649 /* UIImage+FRP_Flickr.h */,
+				F6A6F682198AAA7A00C96649 /* UIImage+FRP_Flickr.m */,
 				F676766F198A798E004E123F /* View Models */,
 			);
 			path = "FRP Flickr";
@@ -258,6 +263,7 @@
 				F67676401989B354004E123F /* main.m in Sources */,
 				F6767672198A7A73004E123F /* FRPInterestingPhotosViewModel.m in Sources */,
 				F67676441989B354004E123F /* FRPAppDelegate.m in Sources */,
+				F6A6F683198AAA7A00C96649 /* UIImage+FRP_Flickr.m in Sources */,
 				F6A6F680198A901E00C96649 /* FRPPhotoCell.m in Sources */,
 				F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */,
 				F67676501989B354004E123F /* FRPDetailViewController.m in Sources */,

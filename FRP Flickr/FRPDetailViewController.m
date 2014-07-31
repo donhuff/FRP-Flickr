@@ -8,10 +8,9 @@
 
 #import "FRPDetailViewController.h"
 
-#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "FRPPhoto.h"
-#import <ReactiveCocoa/RACEXTScope.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "UIImage+FRP_Flickr.h"
 
 
 @interface FRPDetailViewController () <UISplitViewControllerDelegate>
@@ -40,8 +39,6 @@
 {
     [super viewDidLoad];
     
-    @weakify(self);
-    
     RACMulticastConnection *photoConnection = [RACObserve(self, photo) publish];
     
     RAC(self.navigationItem, title) = [photoConnection.signal
@@ -49,17 +46,18 @@
                                            return photo.title;
                                        }];
     
-    [photoConnection.signal subscribeNext:^(FRPPhoto *photo) {
-        @strongify(self);
-        
-        if (!photo) {
-            [self.imageView cancelImageRequestOperation];
-            self.imageView.image = nil;
-            return;
-        }
-        
-        [self.imageView setImageWithURL:[photo url]];
-    }];
+    RAC(self.imageView, image) = [[photoConnection.signal
+                                   map:^RACSignal *(FRPPhoto *photo) {
+                                       if (!photo) {
+                                           return [RACSignal return:nil];
+                                       }
+                                       
+                                       return [RACSignal merge:@[
+                                                                 [RACSignal return:nil],    // clear previous image, if any
+                                                                 [UIImage signalWithURL:[photo url]]
+                                                                 ]];
+                                   }]
+                                  switchToLatest];
     
     [photoConnection connect];
 }
