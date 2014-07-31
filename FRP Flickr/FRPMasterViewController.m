@@ -71,8 +71,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = self.viewModel.photos[indexPath.row];
-        self.detailViewController.detailItem = object;
+        self.detailViewController.photo = self.viewModel.photos[indexPath.row];
     }
 }
 
@@ -82,8 +81,8 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.viewModel.photos[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        FRPPhoto *photo = self.viewModel.photos[indexPath.row];
+        ((FRPDetailViewController *)segue.destinationViewController).photo = photo;
     }
 }
 

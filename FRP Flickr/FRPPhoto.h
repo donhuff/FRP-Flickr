@@ -17,6 +17,8 @@
 @property (nonatomic, copy, readonly) NSString *server;
 @property (nonatomic, copy, readonly) NSString *title;
 
+- (NSURL *)url;
+
 - (NSURL *)urlForThumbnail;
 
 @end

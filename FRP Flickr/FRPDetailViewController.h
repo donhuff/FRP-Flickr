@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FRPDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@class FRPPhoto;
 
-@property (strong, nonatomic) id detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@interface FRPDetailViewController : UIViewController
+
+@property (strong, nonatomic) FRPPhoto *photo;
+
 @end

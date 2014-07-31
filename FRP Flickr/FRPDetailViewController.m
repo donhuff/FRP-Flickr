@@ -8,49 +8,60 @@
 
 #import "FRPDetailViewController.h"
 
-@interface FRPDetailViewController ()
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "FRPPhoto.h"
+#import <ReactiveCocoa/RACEXTScope.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+
+@interface FRPDetailViewController () <UISplitViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-- (void)configureView;
+
 @end
+
 
 @implementation FRPDetailViewController
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setPhoto:(FRPPhoto *)photo
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-
-    if (self.masterPopoverController != nil) {
+    _photo = photo;
+    
+    if (self.masterPopoverController) {
         [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
     }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    @weakify(self);
+    
+    RACMulticastConnection *photoConnection = [RACObserve(self, photo) publish];
+    
+    RAC(self.navigationItem, title) = [photoConnection.signal
+                                       map:^NSString *(FRPPhoto *photo) {
+                                           return photo.title;
+                                       }];
+    
+    [photoConnection.signal subscribeNext:^(FRPPhoto *photo) {
+        @strongify(self);
+        
+        if (!photo) {
+            [self.imageView cancelImageRequestOperation];
+            self.imageView.image = nil;
+            return;
+        }
+        
+        [self.imageView setImageWithURL:[photo url]];
+    }];
+    
+    [photoConnection connect];
 }
 
 #pragma mark - Split view
