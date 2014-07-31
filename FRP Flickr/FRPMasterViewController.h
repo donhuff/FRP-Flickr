@@ -10,6 +10,7 @@
 
 @class FRPDetailViewController;
 
+
 @interface FRPMasterViewController : UITableViewController
 
 @property (strong, nonatomic) FRPDetailViewController *detailViewController;

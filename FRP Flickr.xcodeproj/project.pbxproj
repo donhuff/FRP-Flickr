@@ -19,6 +19,9 @@
 		F676764D1989B354004E123F /* FRPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764C1989B354004E123F /* FRPMasterViewController.m */; };
 		F67676501989B354004E123F /* FRPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764F1989B354004E123F /* FRPDetailViewController.m */; };
 		F67676521989B354004E123F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67676511989B354004E123F /* Images.xcassets */; };
+		F6767672198A7A73004E123F /* FRPInterestingPhotosViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6767671198A7A73004E123F /* FRPInterestingPhotosViewModel.m */; };
+		F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F679198A879300C96649 /* FRPPhotos.m */; };
+		F6A6F67D198A894F00C96649 /* FRPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F67C198A894F00C96649 /* FRPPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		F676764F1989B354004E123F /* FRPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPDetailViewController.m; sourceTree = "<group>"; };
 		F67676511989B354004E123F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F67676581989B355004E123F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6767670198A7A73004E123F /* FRPInterestingPhotosViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPInterestingPhotosViewModel.h; sourceTree = "<group>"; };
+		F6767671198A7A73004E123F /* FRPInterestingPhotosViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPInterestingPhotosViewModel.m; sourceTree = "<group>"; };
+		F6A6F678198A879300C96649 /* FRPPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotos.h; sourceTree = "<group>"; };
+		F6A6F679198A879300C96649 /* FRPPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotos.m; sourceTree = "<group>"; };
+		F6A6F67B198A894F00C96649 /* FRPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhoto.h; sourceTree = "<group>"; };
+		F6A6F67C198A894F00C96649 /* FRPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,10 @@
 		F676766E198A7980004E123F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6A6F67B198A894F00C96649 /* FRPPhoto.h */,
+				F6A6F67C198A894F00C96649 /* FRPPhoto.m */,
+				F6A6F678198A879300C96649 /* FRPPhotos.h */,
+				F6A6F679198A879300C96649 /* FRPPhotos.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -129,6 +142,8 @@
 		F676766F198A798E004E123F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6767670198A7A73004E123F /* FRPInterestingPhotosViewModel.h */,
+				F6767671198A7A73004E123F /* FRPInterestingPhotosViewModel.m */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -236,8 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67676401989B354004E123F /* main.m in Sources */,
+				F6767672198A7A73004E123F /* FRPInterestingPhotosViewModel.m in Sources */,
 				F67676441989B354004E123F /* FRPAppDelegate.m in Sources */,
+				F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */,
 				F67676501989B354004E123F /* FRPDetailViewController.m in Sources */,
+				F6A6F67D198A894F00C96649 /* FRPPhoto.m in Sources */,
 				F676764D1989B354004E123F /* FRPMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
