@@ -18,11 +18,17 @@
 + (RACSignal *)signalWithURL:(NSURL *)url
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        static id <AFURLResponseSerialization> serializer = nil;
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            serializer = [AFImageResponseSerializer serializer];
+        });
+
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
         
         AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-        op.responseSerializer = self.imageResponseSerializer;
+        op.responseSerializer = serializer;
         [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
             [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
@@ -39,19 +45,6 @@
             [op cancel];
         }];
     }];
-}
-
-#pragma mark - Private
-
-+ (id <AFURLResponseSerialization>)imageResponseSerializer
-{
-    static id <AFURLResponseSerialization> result = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        result = [AFImageResponseSerializer serializer];
-    });
-    
-    return result;
 }
 
 @end
