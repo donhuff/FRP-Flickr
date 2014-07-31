@@ -1,849 +1,399 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1EC344A250D649FA87D6A5F4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2D5F07A773FF4BB28596BD43</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F9744AB06EC424FA2192795</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>29DEECBF8EB5471681993EF5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-FRP Flickr-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2D5F07A773FF4BB28596BD43</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-FRP Flickr.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C214AA542FF04C1FB69B4EDD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-FRP Flickr.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-FRP Flickr.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676271989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676391989B354004E123F</string>
-				<string>F67676321989B354004E123F</string>
-				<string>F67676311989B354004E123F</string>
-				<string>C214AA542FF04C1FB69B4EDD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676281989B354004E123F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>FRP</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>15 by 10, LLC</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>F676762B1989B354004E123F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>F67676271989B354004E123F</string>
-			<key>productRefGroup</key>
-			<string>F67676311989B354004E123F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>F676762F1989B354004E123F</string>
-			</array>
-		</dict>
-		<key>F676762B1989B354004E123F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F67676661989B355004E123F</string>
-				<string>F67676671989B355004E123F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F676762C1989B354004E123F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F67676401989B354004E123F</string>
-				<string>F67676441989B354004E123F</string>
-				<string>F67676501989B354004E123F</string>
-				<string>F676764D1989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F676762D1989B354004E123F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F67676361989B354004E123F</string>
-				<string>F67676381989B354004E123F</string>
-				<string>F67676341989B354004E123F</string>
-				<string>1EC344A250D649FA87D6A5F4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F676762E1989B354004E123F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F676764A1989B354004E123F</string>
-				<string>F67676521989B354004E123F</string>
-				<string>F67676471989B354004E123F</string>
-				<string>F676763E1989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F676762F1989B354004E123F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F67676681989B355004E123F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1F9744AB06EC424FA2192795</string>
-				<string>F676762C1989B354004E123F</string>
-				<string>F676762D1989B354004E123F</string>
-				<string>F676762E1989B354004E123F</string>
-				<string>29DEECBF8EB5471681993EF5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FRP Flickr</string>
-			<key>productName</key>
-			<string>FRP Flickr</string>
-			<key>productReference</key>
-			<string>F67676301989B354004E123F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>F67676301989B354004E123F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>FRP Flickr.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F67676311989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676301989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676321989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676331989B354004E123F</string>
-				<string>F67676351989B354004E123F</string>
-				<string>F67676371989B354004E123F</string>
-				<string>F67676581989B355004E123F</string>
-				<string>2D5F07A773FF4BB28596BD43</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676331989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F67676341989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676331989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676351989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F67676361989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676351989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676371989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F67676381989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676371989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676391989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676421989B354004E123F</string>
-				<string>F67676431989B354004E123F</string>
-				<string>F67676451989B354004E123F</string>
-				<string>F67676481989B354004E123F</string>
-				<string>F676764B1989B354004E123F</string>
-				<string>F676764C1989B354004E123F</string>
-				<string>F676764E1989B354004E123F</string>
-				<string>F676764F1989B354004E123F</string>
-				<string>F67676511989B354004E123F</string>
-				<string>F676763A1989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FRP Flickr</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676763A1989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F676763B1989B354004E123F</string>
-				<string>F676763C1989B354004E123F</string>
-				<string>F676763F1989B354004E123F</string>
-				<string>F67676411989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676763B1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>FRP Flickr-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676763C1989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F676763D1989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676763D1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676763E1989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F676763C1989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F676763F1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676401989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F676763F1989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676411989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FRP Flickr-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676421989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FRPAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676431989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FRPAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676441989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676431989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676451989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676461989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676461989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676471989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676451989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676481989B354004E123F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F67676491989B354004E123F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676491989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676764A1989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676481989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F676764B1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FRPMasterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676764C1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FRPMasterViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676764D1989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F676764C1989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F676764E1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FRPDetailViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F676764F1989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FRPDetailViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676501989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F676764F1989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676511989B354004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67676521989B354004E123F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F67676511989B354004E123F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F67676581989B355004E123F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>F67676661989B355004E123F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F67676671989B355004E123F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F67676681989B355004E123F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F67676691989B355004E123F</string>
-				<string>F676766A1989B355004E123F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F67676691989B355004E123F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C214AA542FF04C1FB69B4EDD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>FRP Flickr/FRP Flickr-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>FRP Flickr/FRP Flickr-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F676766A1989B355004E123F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C214AA542FF04C1FB69B4EDD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>FRP Flickr/FRP Flickr-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>FRP Flickr/FRP Flickr-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>F67676281989B354004E123F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EC344A250D649FA87D6A5F4 /* libPods-FRP Flickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5F07A773FF4BB28596BD43 /* libPods-FRP Flickr.a */; };
+		F67676341989B354004E123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676331989B354004E123F /* Foundation.framework */; };
+		F67676361989B354004E123F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676351989B354004E123F /* CoreGraphics.framework */; };
+		F67676381989B354004E123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67676371989B354004E123F /* UIKit.framework */; };
+		F676763E1989B354004E123F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F676763C1989B354004E123F /* InfoPlist.strings */; };
+		F67676401989B354004E123F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F676763F1989B354004E123F /* main.m */; };
+		F67676441989B354004E123F /* FRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F67676431989B354004E123F /* FRPAppDelegate.m */; };
+		F67676471989B354004E123F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67676451989B354004E123F /* Main_iPhone.storyboard */; };
+		F676764A1989B354004E123F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67676481989B354004E123F /* Main_iPad.storyboard */; };
+		F676764D1989B354004E123F /* FRPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764C1989B354004E123F /* FRPMasterViewController.m */; };
+		F67676501989B354004E123F /* FRPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F676764F1989B354004E123F /* FRPDetailViewController.m */; };
+		F67676521989B354004E123F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67676511989B354004E123F /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D5F07A773FF4BB28596BD43 /* libPods-FRP Flickr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRP Flickr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C214AA542FF04C1FB69B4EDD /* Pods-FRP Flickr.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP Flickr.xcconfig"; path = "Pods/Pods-FRP Flickr.xcconfig"; sourceTree = "<group>"; };
+		F67676301989B354004E123F /* FRP Flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FRP Flickr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67676331989B354004E123F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F67676351989B354004E123F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F67676371989B354004E123F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F676763B1989B354004E123F /* FRP Flickr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRP Flickr-Info.plist"; sourceTree = "<group>"; };
+		F676763D1989B354004E123F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F676763F1989B354004E123F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F67676411989B354004E123F /* FRP Flickr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRP Flickr-Prefix.pch"; sourceTree = "<group>"; };
+		F67676421989B354004E123F /* FRPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPAppDelegate.h; sourceTree = "<group>"; };
+		F67676431989B354004E123F /* FRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPAppDelegate.m; sourceTree = "<group>"; };
+		F67676461989B354004E123F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F67676491989B354004E123F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F676764B1989B354004E123F /* FRPMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPMasterViewController.h; sourceTree = "<group>"; };
+		F676764C1989B354004E123F /* FRPMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPMasterViewController.m; sourceTree = "<group>"; };
+		F676764E1989B354004E123F /* FRPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPDetailViewController.h; sourceTree = "<group>"; };
+		F676764F1989B354004E123F /* FRPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPDetailViewController.m; sourceTree = "<group>"; };
+		F67676511989B354004E123F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F67676581989B355004E123F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F676762D1989B354004E123F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67676361989B354004E123F /* CoreGraphics.framework in Frameworks */,
+				F67676381989B354004E123F /* UIKit.framework in Frameworks */,
+				F67676341989B354004E123F /* Foundation.framework in Frameworks */,
+				1EC344A250D649FA87D6A5F4 /* libPods-FRP Flickr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F67676271989B354004E123F = {
+			isa = PBXGroup;
+			children = (
+				F67676391989B354004E123F /* FRP Flickr */,
+				F67676321989B354004E123F /* Frameworks */,
+				F67676311989B354004E123F /* Products */,
+				C214AA542FF04C1FB69B4EDD /* Pods-FRP Flickr.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F67676311989B354004E123F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F67676301989B354004E123F /* FRP Flickr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F67676321989B354004E123F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F67676331989B354004E123F /* Foundation.framework */,
+				F67676351989B354004E123F /* CoreGraphics.framework */,
+				F67676371989B354004E123F /* UIKit.framework */,
+				F67676581989B355004E123F /* XCTest.framework */,
+				2D5F07A773FF4BB28596BD43 /* libPods-FRP Flickr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F67676391989B354004E123F /* FRP Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				F67676421989B354004E123F /* FRPAppDelegate.h */,
+				F67676431989B354004E123F /* FRPAppDelegate.m */,
+				F676764E1989B354004E123F /* FRPDetailViewController.h */,
+				F676764F1989B354004E123F /* FRPDetailViewController.m */,
+				F676764B1989B354004E123F /* FRPMasterViewController.h */,
+				F676764C1989B354004E123F /* FRPMasterViewController.m */,
+				F67676511989B354004E123F /* Images.xcassets */,
+				F67676481989B354004E123F /* Main_iPad.storyboard */,
+				F67676451989B354004E123F /* Main_iPhone.storyboard */,
+				F676766E198A7980004E123F /* Models */,
+				F676763A1989B354004E123F /* Supporting Files */,
+				F676766F198A798E004E123F /* View Models */,
+			);
+			path = "FRP Flickr";
+			sourceTree = "<group>";
+		};
+		F676763A1989B354004E123F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F676763B1989B354004E123F /* FRP Flickr-Info.plist */,
+				F676763C1989B354004E123F /* InfoPlist.strings */,
+				F676763F1989B354004E123F /* main.m */,
+				F67676411989B354004E123F /* FRP Flickr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F676766E198A7980004E123F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F676766F198A798E004E123F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F676762F1989B354004E123F /* FRP Flickr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67676681989B355004E123F /* Build configuration list for PBXNativeTarget "FRP Flickr" */;
+			buildPhases = (
+				1F9744AB06EC424FA2192795 /* Check Pods Manifest.lock */,
+				F676762C1989B354004E123F /* Sources */,
+				F676762D1989B354004E123F /* Frameworks */,
+				F676762E1989B354004E123F /* Resources */,
+				29DEECBF8EB5471681993EF5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FRP Flickr";
+			productName = "FRP Flickr";
+			productReference = F67676301989B354004E123F /* FRP Flickr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F67676281989B354004E123F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FRP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "15 by 10, LLC";
+			};
+			buildConfigurationList = F676762B1989B354004E123F /* Build configuration list for PBXProject "FRP Flickr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F67676271989B354004E123F;
+			productRefGroup = F67676311989B354004E123F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F676762F1989B354004E123F /* FRP Flickr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F676762E1989B354004E123F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F676764A1989B354004E123F /* Main_iPad.storyboard in Resources */,
+				F67676521989B354004E123F /* Images.xcassets in Resources */,
+				F67676471989B354004E123F /* Main_iPhone.storyboard in Resources */,
+				F676763E1989B354004E123F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F9744AB06EC424FA2192795 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29DEECBF8EB5471681993EF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FRP Flickr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F676762C1989B354004E123F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67676401989B354004E123F /* main.m in Sources */,
+				F67676441989B354004E123F /* FRPAppDelegate.m in Sources */,
+				F67676501989B354004E123F /* FRPDetailViewController.m in Sources */,
+				F676764D1989B354004E123F /* FRPMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F676763C1989B354004E123F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F676763D1989B354004E123F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F67676451989B354004E123F /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67676461989B354004E123F /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F67676481989B354004E123F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67676491989B354004E123F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F67676661989B355004E123F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F67676671989B355004E123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F67676691989B355004E123F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C214AA542FF04C1FB69B4EDD /* Pods-FRP Flickr.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP Flickr/FRP Flickr-Prefix.pch";
+				INFOPLIST_FILE = "FRP Flickr/FRP Flickr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F676766A1989B355004E123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C214AA542FF04C1FB69B4EDD /* Pods-FRP Flickr.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP Flickr/FRP Flickr-Prefix.pch";
+				INFOPLIST_FILE = "FRP Flickr/FRP Flickr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F676762B1989B354004E123F /* Build configuration list for PBXProject "FRP Flickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67676661989B355004E123F /* Debug */,
+				F67676671989B355004E123F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67676681989B355004E123F /* Build configuration list for PBXNativeTarget "FRP Flickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67676691989B355004E123F /* Debug */,
+				F676766A1989B355004E123F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F67676281989B354004E123F /* Project object */;
+}

@@ -4,5 +4,6 @@
 target "FRP Flickr" do
     pod 'AFNetworking', '~> 2.3'
     pod 'Mantle', '~> 1.5'
+    pod 'ReactiveCocoa', '~> 2.3'
 end
 
