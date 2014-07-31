@@ -22,6 +22,7 @@
 		F6767672198A7A73004E123F /* FRPInterestingPhotosViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6767671198A7A73004E123F /* FRPInterestingPhotosViewModel.m */; };
 		F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F679198A879300C96649 /* FRPPhotos.m */; };
 		F6A6F67D198A894F00C96649 /* FRPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F67C198A894F00C96649 /* FRPPhoto.m */; };
+		F6A6F680198A901E00C96649 /* FRPPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F67F198A901E00C96649 /* FRPPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		F6A6F679198A879300C96649 /* FRPPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotos.m; sourceTree = "<group>"; };
 		F6A6F67B198A894F00C96649 /* FRPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhoto.h; sourceTree = "<group>"; };
 		F6A6F67C198A894F00C96649 /* FRPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhoto.m; sourceTree = "<group>"; };
+		F6A6F67E198A901E00C96649 /* FRPPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoCell.h; sourceTree = "<group>"; };
+		F6A6F67F198A901E00C96649 /* FRPPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				F676764F1989B354004E123F /* FRPDetailViewController.m */,
 				F676764B1989B354004E123F /* FRPMasterViewController.h */,
 				F676764C1989B354004E123F /* FRPMasterViewController.m */,
+				F6A6F67E198A901E00C96649 /* FRPPhotoCell.h */,
+				F6A6F67F198A901E00C96649 /* FRPPhotoCell.m */,
 				F67676511989B354004E123F /* Images.xcassets */,
 				F67676481989B354004E123F /* Main_iPad.storyboard */,
 				F67676451989B354004E123F /* Main_iPhone.storyboard */,
@@ -253,6 +258,7 @@
 				F67676401989B354004E123F /* main.m in Sources */,
 				F6767672198A7A73004E123F /* FRPInterestingPhotosViewModel.m in Sources */,
 				F67676441989B354004E123F /* FRPAppDelegate.m in Sources */,
+				F6A6F680198A901E00C96649 /* FRPPhotoCell.m in Sources */,
 				F6A6F67A198A879300C96649 /* FRPPhotos.m in Sources */,
 				F67676501989B354004E123F /* FRPDetailViewController.m in Sources */,
 				F6A6F67D198A894F00C96649 /* FRPPhoto.m in Sources */,

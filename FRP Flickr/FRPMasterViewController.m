@@ -11,6 +11,7 @@
 #import "FRPDetailViewController.h"
 #import "FRPInterestingPhotosViewModel.h"
 #import "FRPPhoto.h"
+#import "FRPPhotoCell.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 
@@ -58,10 +59,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    FRPPhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSAssert([cell isKindOfClass:FRPPhotoCell.class], @"Expected FRPPhotoCell: %@.", cell);
     
-    FRPPhoto *photo = self.viewModel.photos[indexPath.row];
-    cell.textLabel.text = photo.title;
+    cell.photo = self.viewModel.photos[indexPath.row];
     return cell;
 }
 

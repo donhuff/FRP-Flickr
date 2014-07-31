@@ -21,4 +21,10 @@
              };
 }
 
+- (NSURL *)urlForThumbnail
+{
+    NSString *s = [NSString stringWithFormat:@"https://farm%d.staticflickr.com/%@/%@_%@_t.jpg", self.farm, self.server, self.identifier, self.secret];
+    return [NSURL URLWithString:s];
+}
+
 @end
